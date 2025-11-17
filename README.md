@@ -19,7 +19,23 @@ O projeto é **100% gratuito** e segue a arquitetura modular moderna do LangChai
 ```bash
 # Crie e ative o ambiente virtual
 python -m venv venv
+
 # No Windows/PowerShell:
 .\venv\Scripts\activate
 # No Linux/macOS:
 source venv/bin/activate
+
+# Instalar requirements
+pip install -r requirements.txt
+
+# Adicione as chaves ao arquivo .env neste formato:
+
+# Chave da Google (LLM Gemini)
+GOOGLE_API_KEY="SUA_CHAVE_AQUI"
+
+# Chave da Tavily (Web Search Tool)
+TAVILY_API_KEY="SUA_CHAVE_AQUI"
+
+# Após configurar o ambiente e o arquivo .env, execute o agente através do script principal:
+python analista_agent.py
+
